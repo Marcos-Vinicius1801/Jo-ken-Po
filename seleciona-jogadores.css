@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=OpenSans');
 @import url('https://fonts.googleapis.com/css?family=Courgette');
-@import url('https://fonts.googleapis.com/css?family=Gudea');
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Roboto');	
-
 *{
 	margin: 0; padding: 0; border: 0;
 	list-style: none;
 }
 
+@import url('https://fonts.googleapis.com/css?family=OpenSans');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Gudea');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Roboto');
 
 body{
 	background-color: #fa8072;
@@ -94,3 +94,4 @@ a img{
 	display: inline;
 
 }
+ 

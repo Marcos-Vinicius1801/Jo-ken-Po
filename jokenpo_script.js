@@ -1,8 +1,6 @@
 $(document).ready(function(){
 
-	//var nomeJogador = prompt("Nome");
-	var nomeJogador ="Marcos";
-	var choice = null;	
+ 	var choice = null;	
 	var vitoriaPlayer = 0;
 	var vitoriaComputer = 0;
 
@@ -21,13 +19,13 @@ $(document).ready(function(){
 
     } 
     console.log(computerChoice);
-
+/*
     $('.flex-item').on('mouseover', function(){
     	$(this).addClass('animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
     		function(){
     			$(this).removeClass('animated shake')
     		});
-    });
+    });*/
 
 	//Evento e função responsáveis por comparar as jogadas e mostrar para o usuário
 	$('#pedra, #papel, #tesoura').on('click', function(ev){
@@ -40,24 +38,24 @@ $(document).ready(function(){
    	    console.log('Escolha da pessoa: ' + choice);
 		
 		//Verificar amanhã, score central 
-   	    $("#nameUser").text(nomeJogador);
+   	    $("#nameUser").text(localStorage.jogador);
 
 
 		if((computerChoice == choice) || (computerChoice == choice)||(computerChoice == choice)){
 				$("#vencedor").text("Empate");
-				$("#jogada-jogador").text("Jogada do "+nomeJogador+" foi "+choice);
+				$("#jogada-jogador").text("Jogada do "+localStorage.jogador+" foi "+choice);
               	$("#jogada-oponente").text("Jogada do oponente foi "+computerChoice);
 
 	    }else if (choice === "pedra"){
 
 	      if (computerChoice === "tesoura"){
 	            alert("pedra vence");
-	        	 $("#vencedor").text("Jogador "+nomeJogador+" venceu");
+	        	 $("#vencedor").text("Jogador "+localStorage.jogador+" venceu");
 
 	        	 vitoriaPlayer += 1;
 	        	 $("#scoreUser").text(vitoriaPlayer);
 
-	        	 $("#jogada-jogador").text("Jogada do "+nomeJogador+" foi "+choice);
+	        	 $("#jogada-jogador").text("Jogada do "+localStorage.jogador+" foi "+choice);
 	        	 $("#jogada-oponente").text("Jogada do oponente foi "+computerChoice);
 
 	        }else {
@@ -67,7 +65,7 @@ $(document).ready(function(){
 	            vitoriaComputer += 1;
 	            $("#scoreOponent").text(vitoriaComputer);
 
-	       		$("#jogada-jogador").text("Jogada do "+nomeJogador+" foi "+choice);
+	       		$("#jogada-jogador").text("Jogada do "+localStorage.jogador+" foi "+choice);
            	    $("#jogada-oponente").text("Jogada do oponente foi "+computerChoice);
 
 	        }
@@ -77,12 +75,12 @@ $(document).ready(function(){
 
 	        if (computerChoice === "pedra"){
 	            alert("papel vence");
-	        	 $("#vencedor").text("Jogador "+nomeJogador+" venceu");
+	        	 $("#vencedor").text("Jogador "+localStorage.jogador+" venceu");
 
 	        	 vitoriaPlayer += 1;
 	        	 $("#scoreUser").text(vitoriaPlayer);
 
-	        	 $("#jogada-jogador").text("Jogada do "+nomeJogador+" foi "+choice);
+	        	 $("#jogada-jogador").text("Jogada do "+localStorage.jogador+" foi "+choice);
 	        	 $("#jogada-oponente").text("Jogada do oponente foi "+computerChoice);
 
 	        }else {
@@ -92,7 +90,7 @@ $(document).ready(function(){
 	            vitoriaComputer += 1;
 	            $("#scoreOponent").text(vitoriaComputer);
 
-	        	$("#jogada-jogador").text("Jogada do "+nomeJogador+" foi "+choice);
+	        	$("#jogada-jogador").text("Jogada do "+localStorage.jogador+" foi "+choice);
 	        	$("#jogada-oponente").text("Jogada do oponente foi "+computerChoice);
 
 	        }
@@ -107,16 +105,16 @@ $(document).ready(function(){
 	            vitoriaComputer += 1;
 	            $("#scoreOponent").text(vitoriaComputer);
 
-	            $("#jogada-jogador").text("Jogada do "+nomeJogador+" foi "+choice);
+	            $("#jogada-jogador").text("Jogada do "+localStorage.jogador+" foi "+choice);
 	        	$("#jogada-oponente").text("Jogada do oponente foi "+computerChoice);
 	        }else {
 	            alert("tesoura vence");
-	            $("#vencedor").text("Jogador "+nomeJogador+" venceu");
+	            $("#vencedor").text("Jogador "+localStorage.jogador+" venceu");
 	            
 	            vitoriaPlayer += 1;
 	            $("#scoreUser").text(vitoriaPlayer);
 
-	            $("#jogada-jogador").text("Jogada do "+nomeJogador+" foi "+choice);
+	            $("#jogada-jogador").text("Jogada do "+localStorage.jogador+" foi "+choice);
 	        	$("#jogada-oponente").text("Jogada do oponente foi "+computerChoice);
 	        }
 	    }
