@@ -51,12 +51,14 @@ $(document).ready(function(){
 	      if (computerChoice === "tesoura"){
 	            alert("pedra vence");
 	        	 $("#vencedor").text("Jogador "+localStorage.jogador+" venceu");
+	        	 
 
 	        	 vitoriaPlayer += 1;
 	        	 $("#scoreUser").text(vitoriaPlayer);
 
 	        	 $("#jogada-jogador").text("Jogada do "+localStorage.jogador+" foi "+choice);
 	        	 $("#jogada-oponente").text("Jogada do oponente foi "+computerChoice);
+
 
 	        }else {
 	            alert("papel vence");

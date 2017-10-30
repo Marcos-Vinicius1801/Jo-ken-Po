@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 *{
     margin: 0; padding: 0; border: 0;
@@ -12,7 +13,7 @@
     position:absolute;
     left:0;
     top:0;
-    background:#fff;
+    background:black;
     z-index:9900;
     padding:10px;
     border-radius:10px;
@@ -21,10 +22,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.window h1{
-    color: black;
-    font-size: 3.00em;  
-    font-family: 'Kaushan Script', cursive;
+#resultado{
+    color:#fff;
+    font-size: 5.50em;  
+    /*font-family: 'Kaushan Script', cursive;*/
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 30px;
+    animation: glow 0.9s infinite;
 }
 
 #mascara{
@@ -39,6 +43,7 @@
 .fechar{
     display:block;
     text-align:right;
+    color:#fff;
 }
 
 .modal{
@@ -48,4 +53,41 @@
 .resultadoPedra, .resultadoPapel, .resultadoTesoura{
     height: 80px;
     width: 140px;
+    color: #fff;
+}
+ 
+
+#jogada-oponente, #jogada-jogador, #vencedor{
+    font-size: 1.80em;
+    margin-top: 50px;
+    color:#fff;
+     font-family: 'Press Start 2P', cursive;
+     line-height: 30px;
+     animation: glow 0.9s infinite;
+     position: relative;
+     top: 40px;
+}
+
+#pedra8, #papel8, #tesoura8{
+    animation: glow 0.9s infinite;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes glow {
+     from {
+      text-shadow: 0 0 2px #fff;
+     }
+    to { 
+      text-shadow: 0 0 12px #fff;
+     }
+}
+/* Standard syntax */
+@keyframes glow {
+     from {
+      text-shadow: 0 0 2px #fff;
+     }
+    to { 
+      text-shadow: 0 0 12px #fff;
+     }
 }
