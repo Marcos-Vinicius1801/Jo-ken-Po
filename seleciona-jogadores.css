@@ -47,6 +47,18 @@ body{
 	-webkit-animation-iteration-count: 1;
 }
 
+#jogar{
+	width: 80px;
+	height: 80px;
+	border-radius: 8px;
+	position: relative;
+	background-color: #3a144f;
+	top: 6px;
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+}
+
 #nameJogador:hover{
 	background-color: #11a6d2;
 	
