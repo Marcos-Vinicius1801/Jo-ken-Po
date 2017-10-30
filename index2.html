@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="index2.css">
+	<link rel="stylesheet" href="modal.css">
+	<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
+</head>
+<body>
+
+	<nav class="navbar">
+		<a href=""><img src="Assets/logo.png" id="brand" class="animated bounceInLeft" alt="Logo Jo-ken-Pô"></a>
+		<ul class="score">
+			<li id="nameUser">Player</li>
+			<li id="scoreUser">0</li>
+			<li id="nameOponent">Oponent</li>
+			<li id="scoreOponent">0</li>
+		</ul>			
+	
+		<ul class="ul-nav">
+			<a href=""><li>Jogo</li></a>
+			<a href=""><li>Sobre</li></a>
+			<a href=""><li>Contato</li></a>
+		</ul>
+		</nav>
+		
+
+	<section class="game flex container">
+		
+		<div class="pedra flex-item"><img src="Assets/pedra.png" id="pedra"  alt=""></div>
+
+		<div class="papel flex-item"><img src="Assets/papel.png" id="papel" alt=""></div>
+
+		<div class="tesoura flex-item"><img src="Assets/tesoura.png" id="tesoura" alt=""></div>
+	</section>
+	 
+	 
+	<div class="modal container">
+		<a href="#janela1" rel="modal"></a>
+		  
+		<div class="window" id="janela1">
+		    <a href="#" class="fechar">X Fechar</a>
+		    <h1>Vencedor</h1>
+		    <p id="vencedor"></p>
+		    <p id="jogada-jogador"></p>
+		    <p id="jogada-oponente"></p>
+		</div>
+		 
+		 
+		<!-- mascara para cobrir o site -->  
+		<div id="mascara"></div>
+	</div>		
+
+		<footer class="container">
+	
+		<ul class="menu-footer">
+			<li><a href="https://github.com/Marcos-Vinicius1801"><img src="Assets/github.png" alt="Git Hub" id="git"></a></li> 
+			<li><a href=""><img src="Assets/facebook.png" alt="Facebook" id="facebook"></a></li>
+			<li><a href="https://www.linkedin.com/in/marcos-vinicius-949020117/"><img src="Assets/linkedin.png" alt="LinkedIn" id="in"></a></li>
+		</ul>
+			<p>Desenvolvido por Marcos Vinicius</p>
+			 
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="Jokenpo2.js"></script>	
+
+</body>
+</html>

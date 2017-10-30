@@ -1,0 +1,55 @@
+*{
+	margin:0; padding: 0; border: 0;
+	text-align:center;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Gudea');
+
+body{
+	background-color:#008af2 !important; 
+}
+
+#topo h1{
+	color:#FFF;
+	margin-top: 50px;
+	font-size: 3.9em;
+	border:3px solid #FFF;
+	width: 340px;
+	position: relative;
+	left: 45px;
+	padding: 10px 10px;
+}
+
+section > h2, p{
+	border: 3px solid #fff;
+	border-radius: 4px;
+	width: 200px;
+}
+
+#txtFieldUser, #txtFieldComputer, #txtFieldGanhador{
+	margin-top: 30px;
+	background-color: #fff;
+	width: 290px;
+	height: 70px;
+	font-size: 2.58em;
+	border: 5px solid #0571c3;
+	font-family: 'Gudea', sans-serif;
+	border-radius: 7px;
+	color: #6f6e6e;
+}
+
+.btn-restart{
+	margin-top: 30px;
+	width: 430px;
+	height: 100px;
+	font-size: 2.58em;
+	color:#FFF;
+	border: 5px solid #830c05;
+	font-family: 'Gudea', sans-serif;
+	border-radius: 7px;
+	background-color: #c30e05;
+}
+.btn-restart:hover{
+	border: 5px solid #f01408;
+	
+}
