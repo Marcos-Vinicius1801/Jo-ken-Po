@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
 *{
     margin: 0; padding: 0; border: 0;
-   
-
 }
-
-
-
-
 
 .window{
     display:none;
@@ -18,20 +13,16 @@
     left:0;
     top:0;
     background:#fff;
-    
     z-index:9900;
     padding:10px;
     border-radius:10px;
-      
-      font-size: 1.00em;
-      color:black;
-      font-family: 'Roboto', sans-serif;
-   
+    font-size: 1.00em;
+    color:black;
+    font-family: 'Roboto', sans-serif;
 }
 
 .window h1{
     color: black;
-   
     font-size: 3.00em;  
     font-family: 'Kaushan Script', cursive;
 }
@@ -45,13 +36,15 @@
     background-color:#000;
 }
  
-.fechar{display:block; text-align:right;}
+.fechar{
+    display:block;
+    text-align:right;
+}
 
 .modal{
     margin-top: 150px;
 }
 
- 
 .resultadoPedra, .resultadoPapel, .resultadoTesoura{
     height: 80px;
     width: 140px;
