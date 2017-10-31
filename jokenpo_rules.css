@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Gudea');
-@import url('https://fonts.googleapis.com/css?family=OpenSans');
+
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Courgette');
 
@@ -7,7 +7,7 @@
 	margin: 0;padding: 0; border: 0;
 	text-decoration: none;
 }
-
+@import url('https://fonts.googleapis.com/css?family=OpenSans');
 body{
 	text-align: center;
 	background-color: #d2f4e1;
@@ -77,6 +77,13 @@ body{
 	font-size: 2.00em;
 }
 
+.instrucoes h2, p{
+	position: relative;
+	top: 70px;
+	color:#636363;
+	font-family: 'OpenSans', sans-serif;
+	font-size: 1.45em;
+}
 .pedra img, .tesoura img, .papel img{
 	width: 215px;
 	height: 315px;
@@ -136,7 +143,8 @@ footer p{
 	top: 10px;
 	letter-spacing: 2px;
 	margin-bottom: 40px;
-	color:black;
+	color:#636363;
+	font-size: 1.15em;
 }
  
 #menu ul, li{
