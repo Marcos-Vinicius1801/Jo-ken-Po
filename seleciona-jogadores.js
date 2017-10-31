@@ -5,7 +5,9 @@ $(document).ready(function(){
 
 		//Usa o local storage para armazenar o valor pego pelo textbox para ser usado na página index_game
 		localStorage.setItem('jogador', nomeJogador)
-		
+	});
+
+	$("#jogar").on('click', function(){
 		 //Abre a janela principal do jogo
 		 window.location.href = 'index_game.html'; 
 	});
