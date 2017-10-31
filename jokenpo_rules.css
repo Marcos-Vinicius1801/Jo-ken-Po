@@ -47,6 +47,10 @@ body{
 	bottom: 82px;
 }
 
+.ul-nav li:hover{
+	filter:blur(1px);
+}
+
 .score li{
 	display: inline;
 	color:#fff;
@@ -159,3 +163,7 @@ img{
 #in, #git, #facebook{
 	margin-left: 10px;
 }
+
+ #in:hover, #git:hover, #facebook:hover{		
+	filter:blur(1px);	
+}		
