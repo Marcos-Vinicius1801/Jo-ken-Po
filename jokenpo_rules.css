@@ -10,13 +10,7 @@
 
 body{
 	text-align: center;
-	background:
-	radial-gradient(black 15%, transparent 16%) 0 0,
-	radial-gradient(black 15%, transparent 16%) 8px 8px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-	background-color:#282828;
-	background-size:16px 16px;
+	background-color: #d2f4e1;
 }
 
 .container{
@@ -27,8 +21,10 @@ body{
 .navbar{
 	width: 100%;
 	height: 80px;
-	background-color: #363738;
+	background-color:#B7D4D4;
+	background-size:16px 16px;*/
 	text-decoration: none;
+	-webkit-box-shadow: 0px 4px rgba(0, 0, 0, .5);
 }
 
 #brand{
@@ -63,12 +59,6 @@ body{
 	bottom: 53px;
 
 }
-.navbar li:hover{
-	border-bottom: 4px solid white;
-	-moz-box-shadow:  0px 4px rgba(0, 0, 0,0.5);
-    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, .5);
-    box-shadow: 0px 4px rgba(0, 0, 0, .2);
-}
 
 .flex {
     display: -webkit-flex;
@@ -90,7 +80,7 @@ body{
 .pedra img, .tesoura img, .papel img{
 	width: 215px;
 	height: 315px;
-	background-color:  #858687;
+	background-color: #d2f4e1;
 }
 
 .flex-item {
@@ -117,15 +107,20 @@ body{
     -vendor-animation-duration: 2s;
     -vendor-animation-delay: 0s;
     -vendor-animation-iteration-count: 2;
-	background-color:  #858687;
+	background-color: #d2f4e1;
+	-webkit-box-shadow: 0px 4px rgba(0, 0, 0, .5);
 }
  
 .flex-item:hover{
 	color:white;
-	transform:scale(1.1);
-	-webkit-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 	border-radius: 8px;
+	border: 4px solid #424242;
+}
 
+.game{
+	position: relative;
+	top: 90px;
 }
 
 footer{
@@ -133,7 +128,7 @@ footer{
 	color:#fff;
 	font-weight: bold;
 	position: relative;
- 	bottom: 20px;
+ 	top: 50px;
 }
 
 footer p{
@@ -141,6 +136,7 @@ footer p{
 	top: 10px;
 	letter-spacing: 2px;
 	margin-bottom: 40px;
+	color:black;
 }
  
 #menu ul, li{
@@ -148,6 +144,10 @@ footer p{
 }
 	
 img{
-	height: 30px;
-	width: 30px;
-}		
+	height: 40px;
+	width: 40px;
+}
+
+#in, #git, #facebook{
+	margin-left: 10px;
+}
