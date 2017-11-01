@@ -64,6 +64,45 @@ body{
 
 }
 
+#nameJogador{
+	height: 50px;
+	width: 370px;
+	border-radius: 8px;
+	position: relative;
+	top: 20px;
+	left: 30px;
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	font-size:2.20em;
+	border:2px solid #B7D4D4;
+	font-weight: bold;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	color: #363333;
+	text-decoration: none;
+	background-color: #fff;
+	outline: none;
+	cursor: pointer;
+	-webkit-transition: all .5s ease-in-out;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: 1;
+}
+
+#jogar{
+	width: 80px;
+	height: 53px;
+	border-radius: 8px;
+	position: relative;
+	background-color: #3a144f;
+	top: 16px;
+	left: 30px;
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+}
+
+
 .flex {
     display: -webkit-flex;
     display: flex;

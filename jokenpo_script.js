@@ -103,6 +103,12 @@
 			             $("#jogada-jogador").text("Jogada do jogador(a) "+localStorage.jogador+" foi "+choice);
 			        	 $("#jogada-oponente").text("Jogada do oponente foi "+computerChoice);
 		        }
+
+		        if(vitoriaPlayer >= 3){
+		        	alert("Jogador "+localStorage.jogador+" venceu");
+		        }else if(vitoriaComputer >=3){
+		        	alert("Computador ganhou");
+		        }
 		    }
 
 		    //Janela modal
