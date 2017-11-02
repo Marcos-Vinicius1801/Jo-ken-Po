@@ -4,6 +4,11 @@
 		var vitoriaPlayer = 0;
 		var vitoriaComputer = 0;
 
+
+		$("#nameJogador-index").ready(function(){
+			this.hide();
+		});
+
 		//Altera o nome do jogador no inicio do index_game
 	    $("#nameUser").text(localStorage.jogador);
 
@@ -103,6 +108,8 @@
 			             $("#jogada-jogador").text("Jogada do jogador(a) "+localStorage.jogador+" foi "+choice);
 			        	 $("#jogada-oponente").text("Jogada do oponente foi "+computerChoice);
 		        }
+
+		    
 		    }
 
 		    //Janela modal
