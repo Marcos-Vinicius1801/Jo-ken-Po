@@ -4,6 +4,11 @@
 		var vitoriaPlayer = 0;
 		var vitoriaComputer = 0;
 
+
+		$("#nameJogador-index").ready(function(){
+			this.hide();
+		});
+
 		//Altera o nome do jogador no inicio do index_game
 	    $("#nameUser").text(localStorage.jogador);
 
@@ -104,11 +109,7 @@
 			        	 $("#jogada-oponente").text("Jogada do oponente foi "+computerChoice);
 		        }
 
-		        if(vitoriaPlayer >= 3){
-		        	alert("Jogador "+localStorage.jogador+" venceu");
-		        }else if(vitoriaComputer >=3){
-		        	alert("Computador ganhou");
-		        }
+		    
 		    }
 
 		    //Janela modal
